@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { Cuadrado } from "./cuadrado.js";
-//import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
-export const Tablero = () => {
+export const Tablero = props => {
 	const arreglosCuadradosVacio = ["", "", "", "", "", "", "", "", ""];
 	const [cuadrados, setCuadrados] = useState(arreglosCuadradosVacio);
-	const [turno, setTurno] = useState(true);
+	const [turno, setTurno] = useState(props.gol);
+
+	const restart = () => {
+		setCuadrados([]);
+	};
 
 	function calculateWinner(squares) {
 		const lines = [
@@ -48,8 +52,14 @@ export const Tablero = () => {
 	};
 
 	return (
-		<div>
+		<div style={{ display: props.escondeono }}>
 			<Ganador />
+			<button
+				type="button"
+				className="btn btn-success start"
+				onClick={restart}>
+				COMENZAR
+			</button>
 			<div className="container">
 				<div className="row">
 					<Cuadrado value={cuadrados[0]} onClick={() => jugar(0)} />
@@ -69,4 +79,9 @@ export const Tablero = () => {
 			</div>
 		</div>
 	);
+};
+
+Tablero.propTypes = {
+	escondeono: PropTypes.string,
+	gol: PropTypes.bool
 };
