@@ -1,65 +1,25 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
-/*.btn{
-    border-radius: 150%;
-    height: 70px;
-    width: 70px;
-    margin-left: 635px;
-    margin-bottom: 35px;
-    box-shadow: coral;
-}
-.contenedor{
-    margin-left: 400px;
-    height: 600px;
-    width: 600px;
-    background-color: coral;
-    font-size: 70px;
-    box-shadow: 5px 10px 8px #888888;
-    }
-
-/* {
-    box-sizing: border-box;
-}*/
-
-/*.row:not(:last-child){
-height: 200px;
-border-bottom: 2px solid black;
-
-}
-
-.cell:not(:last-child){
-    width: 200px;
-    height: 200px;
-    border-right: 2px solid black;
-    
-}
-
-.cell{
+.main {
     text-align: center;
-    padding-top: 50px;
-}*/
-.container {
-    background-color: grey;
-    width: 600px;
-    height: 600px;
 }
-.row:not(:last-child){
-    height: 200px;
-    border-bottom: 2px solid white;}
+.container {
+    width: 300px;
+    margin-top: 24px;
+}
+.row{
+    height: 33%;
+}
 
-.col:not(:last-child){
-    height: 200px;
-    width: 200px;
-    border-right: 2px solid white;
+.col{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #20c997;
+    margin: 2px;
+    border-radius: 4px;
+    font-size: 40px;
+    color: darkgreen;
 }

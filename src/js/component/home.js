@@ -5,8 +5,10 @@ import { Tablero } from "./tablero.js";
 //create your first component
 export function Home() {
 	return (
-		<div>
-			<h1>Hola</h1>
+		<div className="main">
+			<h1 className="display-4">
+				<strong>Ta Te Ti</strong>
+			</h1>
 			<Tablero />
 		</div>
 	);

@@ -48,22 +48,24 @@ export const Tablero = () => {
 	};
 
 	return (
-		<div className="container">
+		<div>
 			<Ganador />
-			<div className="row">
-				<Cuadrado value={cuadrados[0]} onClick={() => jugar(0)} />
-				<Cuadrado value={cuadrados[1]} onClick={() => jugar(1)} />
-				<Cuadrado value={cuadrados[2]} onClick={() => jugar(2)} />
-			</div>
-			<div className="row">
-				<Cuadrado value={cuadrados[3]} onClick={() => jugar(3)} />
-				<Cuadrado value={cuadrados[4]} onClick={() => jugar(4)} />
-				<Cuadrado value={cuadrados[5]} onClick={() => jugar(5)} />
-			</div>
-			<div className="row">
-				<Cuadrado value={cuadrados[6]} onClick={() => jugar(6)} />
-				<Cuadrado value={cuadrados[7]} onClick={() => jugar(7)} />
-				<Cuadrado value={cuadrados[8]} onClick={() => jugar(8)} />
+			<div className="container">
+				<div className="row">
+					<Cuadrado value={cuadrados[0]} onClick={() => jugar(0)} />
+					<Cuadrado value={cuadrados[1]} onClick={() => jugar(1)} />
+					<Cuadrado value={cuadrados[2]} onClick={() => jugar(2)} />
+				</div>
+				<div className="row">
+					<Cuadrado value={cuadrados[3]} onClick={() => jugar(3)} />
+					<Cuadrado value={cuadrados[4]} onClick={() => jugar(4)} />
+					<Cuadrado value={cuadrados[5]} onClick={() => jugar(5)} />
+				</div>
+				<div className="row">
+					<Cuadrado value={cuadrados[6]} onClick={() => jugar(6)} />
+					<Cuadrado value={cuadrados[7]} onClick={() => jugar(7)} />
+					<Cuadrado value={cuadrados[8]} onClick={() => jugar(8)} />
+				</div>
 			</div>
 		</div>
 	);
